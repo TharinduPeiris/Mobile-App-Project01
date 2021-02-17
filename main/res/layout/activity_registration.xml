@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/header">
+
+    </View>
+
+    <TextView
+        android:layout_marginTop="35dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:text="Create Account"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_view"
+        android:orientation="vertical">
+        <include layout="@layout/registrationform"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/bottom"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
